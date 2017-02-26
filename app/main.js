@@ -1,5 +1,7 @@
 var d3 = require('d3');
 
+require('./arc');
+
 const circles = [{
     cx: 25,
     cy: 25,
@@ -18,7 +20,6 @@ const circles = [{
 }];
 
 let body = d3.select('body');
-
 
 let svg = body
     .append('svg')
@@ -63,5 +64,3 @@ function random() {
 
     draw();
 }
-
-window.random = random;
